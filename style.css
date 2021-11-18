@@ -132,6 +132,21 @@ ul li a:hover {
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Preloader */
+#home {
+    overflow: hidden;
+}
+.preloader {
+    background: var(--white-color) url(images/preloader.gif) no-repeat center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+}
 /* Navigation Section */
 .nav-section {
     position: fixed;

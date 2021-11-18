@@ -1,3 +1,11 @@
+// Preloader
+const body = document.querySelector('#home');
+const preloader = document.querySelector('.preloader');
+function preloaderFunc() {
+  preloader.style.display = 'none';
+  body.style.overflow = 'initial';
+}
+body.addEventListener('load' , preloaderFunc());
 // NavBar
 const hamburger = document.querySelector('.fa-bars');
 const cross = document.querySelector('.fa-times');
