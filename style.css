@@ -76,7 +76,7 @@ textarea {
     color: var(--white-color);
 }
 section {
-    padding: 6rem 0;
+    padding: 5rem 0;
 }
 ul li a {
     transition: color 0.3s ease;
@@ -101,7 +101,7 @@ ul li a:hover {
     display: inline-block;
     background-color: var(--red-color);
     color: var(--white-color);
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     border-radius: 25px;
     transition: background-color 0.3s ease;
 }
@@ -132,12 +132,7 @@ ul li a:hover {
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Header Section */
-.header-section {
-    background: url(images/hero-overlay.png) no-repeat ,url(images/hero-l4-image.png) no-repeat;
-    background-size: contain, cover;
-    padding: 1rem 0;
-}
+/* Navigation Section */
 .nav-section {
     position: fixed;
     top: 0;
@@ -202,11 +197,20 @@ ul li a:hover {
 .nav-section .dropdown a:hover {
     color: white;
 }
+/* Hero Section */
 .hero-section {
-    width: 50%;
-    height: 650px;
+    background: url(images/hero-overlay.png) no-repeat ,url(images/hero-l4-image.png) no-repeat;
+    background-size: contain, cover;
+    height: 700px;
+}
+.hero-section .container {
     display: flex;
     align-items: center;
+    height: 100%;
+}
+.hero-section .hero-area {
+    width: 50%;
+    margin-top: 3rem;
 }
 .hero-section h1 {
     font-size: 3rem;
@@ -227,7 +231,7 @@ ul li a:hover {
     margin-left: 0.5rem;
     padding-left: 2rem;
 }
-.hero-section div p:last-child {
+.hero-area p:last-child {
     margin-top: 2rem;
 }
 /* About Us Section */
@@ -600,7 +604,7 @@ ul li a:hover {
 /* Footer Section */
 .footer-section .top-footer {
     justify-content: space-between;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid var(--text-color);
 }
 .top-footer > * {
@@ -661,10 +665,6 @@ ul li a:hover {
     }
 }
 @media (max-width: 991px) {
-    .header-section {
-        background-size: cover, cover;
-        background-position: top, center;
-    }
     .nav-section .fa-bars, .nav-section .fa-times {
         display: block;
     }
@@ -680,7 +680,7 @@ ul li a:hover {
         left: -100%;
         bottom: 0;
         padding: 5rem;
-        width: 350px;
+        width: 300px;
         background-color: var(--white-color);
         box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2);
         flex-direction: column;
@@ -705,6 +705,10 @@ ul li a:hover {
         font-weight: 400;
     }
     .hero-section {
+        background-size: cover, cover;
+        background-position: top, center;
+    }
+    .hero-section .hero-area {
         width: 100%;
     }
     .hero-section .input-box {
@@ -759,9 +763,13 @@ ul li a:hover {
     }
     .row {
         flex-direction: column;
+        gap: 2rem;
     }
     .row > * {
         width: 100%;
+    }
+    .hero-section {
+        height: 800px;
     }
     .about-section .image-section img:last-child {
         display: none;
@@ -831,6 +839,15 @@ ul li a:hover {
     .choose-box i {
         height: 50px;
         padding-top: 0.8rem;
+    }
+    .booking-section .container {
+        border-radius: 0;
+    }
+    .booking-section .container > div {
+        padding: 2rem 1rem;
+    }
+    footer {
+        margin-top: 2rem;
     }
     .top-footer ul {
         flex-direction: column;
