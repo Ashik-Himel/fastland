@@ -163,7 +163,7 @@ ul li a:hover {
 .more {
     position: relative;
 }
-.nav-section .dropdown {
+.nav-area .dropdown {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -172,17 +172,20 @@ ul li a:hover {
     left: 20px;
     width: 200px;
     height: 0px;
+    opacity: 0;
     overflow: hidden;
     border-radius: 5px;
     border-top-left-radius: 0;
     background-color: var(--red-color);
-    transition: height 0.3s ease , padding 0.3s ease;
+    transition: height 0.3s ease , padding 0.3s ease , opacity 0.5s ease;
 }
-.show-dropdown {
-    height: 125px !important;
+.nav-area .show-dropdown {
+    height: 125px;
     padding: 1rem 2rem;
+    overflow: visible;
+    opacity: 1;
 }
-.nav-section .dropdown::before {
+.nav-area .dropdown::before {
     content: "";
     display: block;
     position: absolute;
@@ -688,6 +691,9 @@ ul li a:hover {
     }
     .show-nav {
         left: 0 !important;
+    }
+    .nav-area .dropdown {
+        left: 0;
     }
     .nav-section .nav-link {
         color: var(--title-color);
