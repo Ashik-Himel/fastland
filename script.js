@@ -1,6 +1,7 @@
 // Preloader
-const body = document.querySelector('#home');
-const preloader = document.querySelector('.preloader');
+const body = document.getElementById('home');
+const preloader = document.getElementById('preloader');
+
 function preloaderFunc() {
   preloader.style.display = 'none';
   body.style.overflow = 'initial';
@@ -54,6 +55,43 @@ function scrollNav() {
   console.log(scrollLength);
 }
 window.addEventListener('scroll' , scrollNav);
+// Jump Bookmark
+function jumptoHome() {
+  let section = document.querySelector('#home');
+  window.scrollTo(section.offsetLeft, section.offsetTop);
+}
+function jumptoAbout() {
+  let section = document.querySelector('#about');
+  window.scrollTo(section.offsetLeft, section.offsetTop);
+}
+function jumptoServices() {
+  let section = document.querySelector('#services');
+  window.scrollTo(section.offsetLeft, section.offsetTop);
+}
+function jumptoBooking() {
+  let section = document.querySelector('#booking');
+  window.scrollTo(section.offsetLeft, section.offsetTop);
+}
+function jumptoPricing() {
+  let section = document.querySelector('#pricing');
+  window.scrollTo(section.offsetLeft, section.offsetTop);
+}
+function jumptoChoose() {
+  let section = document.querySelector('#choose');
+  window.scrollTo(section.offsetLeft, section.offsetTop);
+}
+function jumptoProcess() {
+  let section = document.querySelector('#process');
+  window.scrollTo(section.offsetLeft, section.offsetTop);
+}
+function jumptoTestimonial() {
+  let section = document.querySelector('#testimonial');
+  window.scrollTo(section.offsetLeft, section.offsetTop);
+}
+function jumptoContact() {
+  let section = document.querySelector('#contact');
+  window.scrollTo(section.offsetLeft, section.offsetTop);
+}
 // Slick Slider
 $(document).ready(function(){
     $('.testimonial-slider').slick({

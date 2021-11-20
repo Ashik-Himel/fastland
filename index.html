@@ -15,29 +15,29 @@
 </head>
 <body id="home">
 <!-- Preloader -->
-<div class="preloader"></div>
+<div id="preloader"></div>
 <!-- Navigation Section -->
 <nav class="nav-section">
     <div class="container">
         <div class="nav-area">
             <img src="images/logo-white.png" alt="Site Logo">
             <ul class="navigation">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#booking" class="nav-link">Booking</a></li>
-                <li><a href="#pricing" class="nav-link">Pricing</a></li>
-                <li class="more"><a href="#more" class="more-link">More <i class="fas fa-chevron-down"></i></a>
+                <li><a onclick="jumptoHome()" class="nav-link">Home</a></li>
+                <li><a onclick="jumptoAbout()" class="nav-link">About</a></li>
+                <li><a onclick="jumptoServices()" class="nav-link">Services</a></li>
+                <li><a onclick="jumptoBooking()" class="nav-link">Booking</a></li>
+                <li><a onclick="jumptoPricing()" class="nav-link">Pricing</a></li>
+                <li class="more"><a class="more-link">More <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown">
-                        <li><a href="#choose" class="nav-link">Choose Us</a></li>
-                        <li><a href="#process" class="nav-link">Our Process</a></li>
-                        <li><a href="#testimonial" class="nav-link">Testimonial</a></li>
+                        <li><a onclick="jumptoChoose()" class="nav-link">Choose Us</a></li>
+                        <li><a onclick="jumptoProcess()" class="nav-link">Our Process</a></li>
+                        <li><a onclick="jumptoTestimonial()" class="nav-link">Testimonial</a></li>
                     </ul>
                 </li>
                 <i class="fas fa-times cross2"></i>
             </ul>
             <div class="nav-btn">
-                <a href="#contact" class="btn">Contact Me</a>
+                <a onclick="jumptoContact()" class="btn">Contact Me</a>
                 <i class="fas fa-bars"></i>
             </div>
         </div>
