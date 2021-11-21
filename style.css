@@ -75,7 +75,7 @@ textarea {
     color: var(--white-color);
 }
 section {
-    padding: 5rem 0;
+    padding: 8rem 0;
 }
 ul li a {
     transition: color 0.3s ease;
@@ -134,6 +134,7 @@ ul li a:hover {
 /* Preloader */
 #home {
     overflow: hidden;
+    scroll-padding-top: 400px;
 }
 #preloader {
     background: var(--white-color) url(images/preloader.gif) no-repeat center;
@@ -780,7 +781,7 @@ ul li a:hover {
 }
 @media (max-width: 767px) {
     section {
-        padding: 3rem 0;
+        padding: 6rem 0;
     }
     .row {
         flex-direction: column;
